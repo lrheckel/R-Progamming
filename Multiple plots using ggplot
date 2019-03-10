@@ -1,0 +1,36 @@
+Some ggplot examples of multiple lines on the same graph. Need to add the ggplot2 library to the project to utilize them.
+
+ggplot(data=BN1file) + geom_density(aes(x=V1), fill="grey90", colour='red') +geom_density(data=BN2file,aes(x=V1))
+
+ggplot(data=N1file) + geom_density(aes(x=V1), fill="grey90", colour='red') +geom_density(data=N2file,aes(x=V1))
+
+ggplot(data=N1file) + geom_boxplot(aes(x=V1), fill="grey90", colour='red') +geom_boxplot(data=N2file,aes(x=V1))
+
+ggplot(data=N1file) + geom_boxplot(aes(x=1,y=V1), fill="grey90", colour='red') +geom_boxplot(data=N2file,aes(x=2,y=V1))
+
+ggplot(data=BN1file) + geom_boxplot(aes(x=1,y=V1), fill="grey90", colour='red') +geom_boxplot(data=BN2file,aes(x=2,y=V1))
+
+ggplot(data=BN1file) + geom_density(aes(x=V1), fill="grey50")
+
+ggplot(data=BN2file) + geom_density(aes(x=V1), fill="grey50")
+
+
+The below are from Regis MSDS600 Week 6
+
+
+ggplot(data=srd1) + geom_point(aes(x=1,y=V1), fill="grey90", colour='red') +geom_point(data=srd2,aes(x=2,y=V1))
+
+ggplot(data=srd1) + geom_point(aes(x=V1,y=V2), fill="grey90", colour='red') +geom_point(data=srd2,aes(x=V1,y=V2))
+
+ggplot(data=srd1) + geom_smooth(aes(x=V1,y=V2), fill="grey90", colour='red') +geom_smooth(data=srd2,aes(x=V1,y=V2))
+
+ggplot(data=srd1) + geom_density(aes(x=V1), fill="grey90", colour='red') +geom_density(data=srd2,aes(x=V1))
+
+ggplot(data=srd1) + geom_density(aes(x=V2), fill="grey90", colour='red') +geom_density(data=srd2,aes(x=V2))
+
+ggplot(data=srd1) + geom_boxplot(aes(x=1,y=V1), fill="grey90", colour='red') +geom_boxplot(data=srd2,aes(x=2,y=V1)) 
+
+ggplot(data=srd1) + geom_boxplot(aes(x=1,y=V2), fill="grey90", colour='red') +geom_boxplot(data=srd2,aes(x=2,y=V2))
+
+
+
